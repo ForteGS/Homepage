@@ -1,0 +1,223 @@
+/******************************
+  GENERAL
+*******************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make all images to fill their parent element */
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+/******************************
+  HEADING
+*******************************/
+
+/* Fix little space above the header */
+header {
+  /* Trouble remembering the syntax? Top -> clock wise */
+  float:left;
+  margin: 0 0 30px 0; /* Header separated from the content */
+  padding: 5px 0 0 0; /* Seperate the text without removing the margin of the page */
+  width: 100%; /* Stretch entire page */
+  
+  
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal; 
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/******************************
+  NAVIGATION
+*******************************/
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none; /* remove buttons list */
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+} 
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+ 
+
+/******************************
+  FOOTER
+*******************************/
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both; /* Clear left and right of the footer */
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin 0 5px;
+}
+
+/******************************
+  PAGE: PORTFOLIO
+*******************************/
+
+/* Remove bullets.*/
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Rearrange the images in the page.*/
+#gallery li {
+  /* float: Position elements in a special way. 
+     width: Each image only take up 45% of the page of the total element.
+     margin 2.5% for each image have margin size of 2.5% in the page. 
+     background-color: For the back ground of the whole <li> tag.
+  */
+  float:left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+/* Styling the paragraph description */
+#gallery li a p {
+  margin: 0; /* Zero out the default margin */
+  padding: 5%; /* Adding some padding under the image */
+  font-size: 0.75em; /* Smaller font-size */
+  color: #bdc3c7; /* Color for the text in the paragraph */
+  
+}
+
+/******************************
+  PAGE: ABOUT
+*******************************/
+.profile-photo  {
+  clear: both;
+  display: block;
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%; /* add rounded corner to element */
+}
+
+/******************************
+  PAGE: CONTACT
+*******************************/
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block; /* Each anchor element will take up space */
+  min-height: 12px; /* Minimum height for the icons to be visible */
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px; /* Have some space between the icons and the text */
+  margin: 0 0 10px; /* separation between text */
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');  
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png'); 
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png'); 
+}
+
+/******************************
+  COLORS
+*******************************/
+/* Site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* Green header */
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* nav background on mobile devices */
+nav {
+  background:#599a68;
+}
+
+/* Links color */
+a {
+  color: #6ab47b;
+}
+
+/* Color for nav link */
+nav a, nav a:visited {
+  color: #fff;
+  
+}
+
+/* Selected and hover nav link's color */
+nav a.selected, nav a:hover  {
+  color: #32673f;
+}
+
